@@ -105,6 +105,11 @@
                 <Annotation Term="SAP__common.Label" String="INT4"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Nº inteiro com sinal 4 bytes"/>
             </Annotations>
+            <Annotations Target="SAP__self.ZC_DD_ITEMType/Itemid">
+                <Annotation Term="SAP__core.Immutable"/>
+                <Annotation Term="SAP__common.Label" String="INT4"/>
+                <Annotation Term="SAP__common.QuickInfo" String="Nº inteiro com sinal 4 bytes"/>
+            </Annotations>
             <Annotations Target="SAP__self.ZC_DD_ITEMType">
                 <Annotation Term="SAP__common.Label" String="Projection View - Item"/>
                 <Annotation Term="SAP__common.Messages" Path="SAP__Messages"/>
@@ -132,6 +137,11 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
+            </Annotations>
+            <Annotations Target="SAP__self.ZC_DD_CABType/Ordemid">
+                <Annotation Term="SAP__core.Immutable"/>
+                <Annotation Term="SAP__common.Label" String="INT4"/>
+                <Annotation Term="SAP__common.QuickInfo" String="Nº inteiro com sinal 4 bytes"/>
             </Annotations>
             <Annotations Target="SAP__self.ZC_DD_CABType/CriacaoUsuario">
                 <Annotation Term="SAP__common.IsUpperCase"/>
@@ -242,15 +252,7 @@
                 <Annotation Term="SAP__capabilities.KeyAsSegmentSupported"/>
                 <Annotation Term="SAP__capabilities.AsynchronousRequestsSupported"/>
             </Annotations>
-            <Annotations Target="SAP__self.ZC_DD_ITEMType/Itemid">
-                <Annotation Term="SAP__common.Label" String="INT4"/>
-                <Annotation Term="SAP__common.QuickInfo" String="Nº inteiro com sinal 4 bytes"/>
-            </Annotations>
             <Annotations Target="SAP__self.ZC_DD_ITEMType/Quantidade">
-                <Annotation Term="SAP__common.Label" String="INT4"/>
-                <Annotation Term="SAP__common.QuickInfo" String="Nº inteiro com sinal 4 bytes"/>
-            </Annotations>
-            <Annotations Target="SAP__self.ZC_DD_CABType/Ordemid">
                 <Annotation Term="SAP__common.Label" String="INT4"/>
                 <Annotation Term="SAP__common.QuickInfo" String="Nº inteiro com sinal 4 bytes"/>
             </Annotations>

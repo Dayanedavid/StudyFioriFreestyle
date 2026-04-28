@@ -68,9 +68,9 @@
         }
       },
       "usuarios": {
-				"type": "sap.ui.model.json.JSONModel",
-				"dataSource": "usuarios"
-			},
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource": "usuarios"
+      },
       "": {
         "dataSource": "mainService",
         "preload": true,
@@ -112,7 +112,8 @@
           "target": [
             "TargetCustomerForm"
           ]
-        },{
+        },
+        {
           "name": "RouteCustomerEdit",
           "pattern": "customer/{CustomerId}/edit",
           "target": [

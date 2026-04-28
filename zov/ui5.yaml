@@ -19,6 +19,7 @@ server:
           - path: /sap
             url: http://ndc-s4hana.opus-idc.com.br:8000
             client: '250'
+            authenticationType: basic
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
