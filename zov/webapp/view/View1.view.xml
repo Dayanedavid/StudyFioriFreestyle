@@ -6,8 +6,7 @@
     xmlns="sap.m">
     <Page id="page1" title="{i18n>title}">
       
-	  	<Button text="Abrir Dialog" press="onOpenDialogInfo" />
+	  	<Button text="Test" press="onTest" />
 
-        <core:Fragment fragmentName="zov.view.DialogInfo" type="XML" />
     </Page>
 </mvc:View>

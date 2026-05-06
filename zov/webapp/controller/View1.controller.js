@@ -5,37 +5,30 @@ sap.ui.define([
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller,MessageToast) {
+    function (Controller, MessageToast) {
         "use strict";
 
         return Controller.extend("zov.controller.View1", {
             onInit: function () {
             },
 
-            onOpenDialogInfo() {
-                var that  = this;
-                var sName = "zov.view.DialogInfo";
-                
-                if(!this.oDialog){
-                    /*
-                    this.loadFragment({
-                        name: sName
-                    }).then(function(oDialog2) {
-                        that.oDialog = oDialog2;
-                        that.oDialog.open();
-                    }.bind(this));
-                    */
-
-                    this.oDialog = this.byId("DialogInfo");
-                    that.oDialog.open();
-                }else{
-                    this.oDialog.open();
-                }
+            digaOla: function () {
+                alert("Olá");
             },
-            
-            onCloseDialogInfo: function(){
-                //this.byId("DialogInfo").close();
-                this.oDialog.close();
+
+            onTest: function () {
+                const oModel = this.getOwnerComponent().getModel();
+
+                const oBinding = oModel.bindContext("/ZC_DD_CAB");
+
+                oBinding.requestObject()
+                    .then((oData) => {
+                        console.log(oData);
+                        this.digaOla();
+                    })
+                    .catch((e) => {
+                        console.error(e);
+                    });
             }
         });
     });
